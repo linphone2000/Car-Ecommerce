@@ -1,0 +1,14 @@
+.footer-pone{
+    border-style: solid;
+    border-color: #1f2c70;
+    border-radius: 5px;
+    height: 20px;
+  }
+  .footer-pone:hover{
+    border-style: solid;
+    border-radius: 5px;
+    border-color: white;
+  }
+  .footer-sar{
+    text-decoration: none;
+  }

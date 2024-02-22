@@ -1,0 +1,281 @@
+body{
+    background-color: #ecfaff;
+    margin: 0px 0px 0px 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+}
+.one{
+    text-align: center;
+    font-family: 'Mochiy Pop One', sans-serif;
+    background-color: #ECF2FF;
+    width: 100%;
+    padding-top: 50px;
+}
+.h1-sar{
+    margin: auto auto 0px auto;
+    font-family: 'Sacramento', cursive;
+    font-size: 5.625rem;
+    color: #27187e;
+    line-height: 2;
+}
+.h2-sar{
+    font-family: 'Labrada', serif;
+    font-size: 2.5rem;
+    font-weight: normal;
+    color: #27187e;
+}
+.h3-sar{
+    font-size: 2rem;
+    font-family: 'Labrada', serif;
+    color: #27187e;
+}
+a{
+    color: #3b25b3;
+}
+.botton-cloud{
+    position: relative;
+    right: 30%;
+}
+.top-cloud{
+    position: relative;
+    left: 30%;
+}
+.profile{
+    margin: auto;
+    justify-content: center;
+    width: 50%;
+}
+.profilepone{
+    width: 35%;
+    border-radius: 10%;
+}
+.profile_paragraph{
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+    width: 50%;
+    margin: 0px auto 0px;   
+    line-height: 2;
+    font-size: 1.1rem;
+}
+.sar-pite-ahla{
+    font-family: 'EB Garamond', serif;
+    font-weight: 800;
+    font-size: 1.1rem;
+}
+.skillpone{
+    float: left ;
+    width: 35%;
+    border-radius: 15%;
+    margin-right: 30px;
+}
+.ffooter-link{
+    color: white;
+    text-decoration: none;
+    position: relative;
+    margin: auto 5px auto 5px;
+    transition: 0.2s;
+}
+.ffooter-link:hover{
+    color:black;
+}
+.skill-row{
+    width: 50%;
+    margin: 50px auto 100px auto;
+    text-align: left;
+    line-height: 2;
+}
+.ngayotetheepone{
+    float: right ;
+    width: 30%;
+    border-radius: 15%;
+    margin-left: 30px;
+}
+.atann{
+    margin: 0 auto 10px 0;
+    border-style: none none dotted none;
+    width: 20%;
+    border-width: 10px;
+    border-color: rgb(74, 68, 68);
+    margin: 15px auto 15px auto;
+}
+.bottom-container{
+    background-color: #6096B4;
+    position: absolute;
+    width: 100%;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.btn-style{
+    background-color: #5ea4a4;
+    width: 150px;
+    height: 35px;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    border-style: none;
+    border-radius: 10px;
+    transition: .2s;
+}
+.btn{
+    color: white;
+    text-decoration: none;
+}
+.btn:hover{
+    color: #19767a;
+}
+.btn-style:hover{
+    background-color: #66bfbf;
+}
+.contact-me{
+    margin-bottom: 50px;
+}
+.contact-message{
+    font-family: 'EB Garamond', serif;
+    width:25%;
+    margin: 25px auto;
+    line-height: 2;
+}
+.copyright{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.button_style{
+    top: 0px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background: #fff;
+    font-size: 14px;
+    border-radius: 26px;
+    border: 1px solid #D4D3E8;
+    text-transform: uppercase;
+    font-weight: 700;
+    align-items: center;
+    top: 10px;
+    width: 150px;
+    height: 50px;
+    color: #544bb3;
+    box-shadow: 0px 2px 2px #544bb3;
+    cursor: pointer;
+    transition: .2s;
+    position: relative;
+}
+.button_style:active,
+.button_style:focus,
+.button_style:hover {
+    border-color: #3b25b3;
+    background-color: #3b25b3;
+    color: white;
+    width: 160px;
+    outline: none;
+}
+.middle-container{
+    text-align: center;
+}
+/* Phone */
+@media (max-width: 500px) {
+    .top-cloud {
+        position: relative;
+        left: 30%;
+        width: 25%;
+    }
+    .h1-sar {
+        margin: 0px auto 0px auto;
+        font-family: 'Sacramento', cursive;
+        font-size: 3.625rem;
+        color: #27187e;
+        line-height: 2;
+    }
+    .h2-sar {
+        font-family: 'Labrada', serif;
+        font-size: 1.5rem;
+        font-weight: normal;
+        color: #27187e;
+    }
+    .botton-cloud {
+        position: relative;
+        right: 30%;
+        width: 25%;
+    }
+    .mountain{
+        width: 70%;
+        margin-bottom: 25px;
+    }
+    .profile{
+        width: 100%;
+    }
+    .profile_paragraph {
+        font-family: 'EB Garamond', serif;
+        text-align: center;
+        width: 50%;
+        margin: 0px auto 0px;
+        line-height: 2;
+        font-size: 1.1rem;
+    }
+    .skill-row {
+        width: 90%;
+        margin: 25px auto;
+        text-align: left;
+        line-height: 2;
+    }
+    .contact-message {
+        font-family: 'EB Garamond', serif;
+        width: 100%;
+        margin: 25px auto;
+        line-height: 2;
+    }
+}
+/* Tablet */
+@media (min-width: 730px) and (max-width: 800px){
+    .top-cloud {
+        position: relative;
+        left: 30%;
+        width: 25%;
+    }
+    .h1-sar {
+        margin: 0px auto 0px auto;
+        font-family: 'Sacramento', cursive;
+        font-size: 3.625rem;
+        color: #27187e;
+        line-height: 2;
+    }
+    .h2-sar {
+        font-family: 'Labrada', serif;
+        font-size: 1.5rem;
+        font-weight: normal;
+        color: #27187e;
+    }
+    .botton-cloud {
+        position: relative;
+        right: 30%;
+        width: 25%;
+    }
+    .mountain{
+        width: 70%;
+    }
+    .profile{
+        width: 100%;
+    }
+    .profile_paragraph {
+        font-family: 'EB Garamond', serif;
+        text-align: center;
+        width: 50%;
+        margin: 0px auto 0px;
+        line-height: 2;
+        font-size: 1.1rem;
+    }
+    .skill-row {
+        width: 90%;
+        margin: 25px auto;
+        text-align: left;
+        line-height: 2;
+    }
+    .contact-message {
+        font-family: 'EB Garamond', serif;
+        width: 100%;
+        margin: 25px auto;
+        line-height: 2;
+    }
+}
