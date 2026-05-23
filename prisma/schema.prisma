@@ -1,0 +1,84 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  CUSTOMER
+  B2B
+  ADMIN
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  password  String
+  name      String
+  role      Role     @default(CUSTOMER)
+  payment   String?
+  address1  String?
+  address2  String?
+  city      String?
+  state     String?
+  zip       String?
+  cardLast4 String?  @map("card_last4")
+  orders    Order[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Item {
+  id          Int           @id @default(autoincrement())
+  name        String
+  category    String
+  price       Int
+  description String?
+  image       String?
+  moreData    ItemMoreData?
+  orderItems  OrderItem[]
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+
+  @@index([category])
+}
+
+model ItemMoreData {
+  id      Int     @id @default(autoincrement())
+  itemId  Int     @unique
+  item    Item    @relation(fields: [itemId], references: [id], onDelete: Cascade)
+  detail1 String?
+  detail2 String?
+  detail3 String?
+  detail4 String?
+  detail5 String?
+  detail6 String?
+  photo1  String?
+  photo2  String?
+  photo3  String?
+}
+
+model Order {
+  id         Int         @id @default(autoincrement())
+  userId     Int?
+  user       User?       @relation(fields: [userId], references: [id])
+  guestEmail String?
+  items      OrderItem[]
+  createdAt  DateTime    @default(now())
+
+  @@index([userId])
+}
+
+model OrderItem {
+  id        Int   @id @default(autoincrement())
+  orderId   Int
+  order     Order @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  itemId    Int?
+  item      Item? @relation(fields: [itemId], references: [id])
+  name      String
+  quantity  Int
+  unitPrice Int
+}
